@@ -1,7 +1,7 @@
 const mongoose = require('../database/connection')
 
 const portifolioSchema = new mongoose.Schema({
-    name: String,
+    Name: String,
     Aboutme: String,
     Projects: Array
 });
