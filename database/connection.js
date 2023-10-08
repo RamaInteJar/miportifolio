@@ -8,5 +8,5 @@ mongoose.connect(process.env.MONGO_URI, {
 mongoose.connection
 .on("open", ()=>console.log('connected to mongoDB'))
 .on('close', ()=>console.log('disconnected fro mongoDB'))
-on("error", (e) => console.log('error occured', e));
+.on("error", (e) => console.log('error occured', e));
 module.exports = mongoose
