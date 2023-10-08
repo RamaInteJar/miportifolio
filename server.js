@@ -10,5 +10,5 @@ app.use(express.urlencoded({extended:true}));
 app.get('/', (req, res)=>{
     res.send('sanity check')
 })
-app.use("/portfolio", portifolioController); // Corrected the path for portfolioController
+app.use("/Portfolio", portifolioController); // Corrected the path for portfolioController
 app.listen(PORT, () => console.log('Give some love at port', PORT)); // Corrected the syntax for app.listen
