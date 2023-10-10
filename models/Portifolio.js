@@ -3,7 +3,7 @@ const mongoose = require('../database/connection')
 const portifolioSchema = new mongoose.Schema({
     Name: String,
     Aboutme: String,
-    Projects: Array
+    contact: String,
 });
 
 const Portifolio = mongoose.model("Portifolio", portifolioSchema)
